@@ -1,0 +1,27 @@
+/* assets/styles.css */
+
+.info-box {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    height: 100px; /* Altura fixa para alinhar as caixas */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.coluna-verde {
+    background-color: #7FA646;  /* Fundo clarinho */
+    padding: 20px;
+    border-radius: 10px;  /* Bordas arredondadas */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+}
+
+.coluna-vermelha {
+    background-color: #F29C94;  /* Fundo clarinho */        
+    padding: 20px;
+    border-radius: 10px;  /* Bordas arredondadas */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+}
