@@ -25,3 +25,22 @@
     border-radius: 10px;  /* Bordas arredondadas */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);  /* Sombra suave */
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+}
+.footer a {
+    color: #0078e7;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}

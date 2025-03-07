@@ -106,6 +106,13 @@ def main():
                 <b>% Custo Operacional:</b> {calculadora.percentual_despesas * 100:.2f}%</div>', 
                 unsafe_allow_html=True
             )
+        
+        st.markdown(
+                f'<div class="footer"> \
+                Desenvolvido por <a href="https://www.linkedin.com/in/caiquegodoy" target="_blank">Caique Godoy</a> \
+                </div>', 
+                unsafe_allow_html=True
+            )
 
     with tab2:
         st.header("📊 Calculadora de Preço para Mercado Livre")
