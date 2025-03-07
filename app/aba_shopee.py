@@ -1,9 +1,6 @@
 import streamlit as st
 import sys
 import os
-import pandas as pd
-from io import BytesIO
-
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 

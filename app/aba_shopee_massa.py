@@ -3,6 +3,7 @@ import sys
 import os
 from io import BytesIO
 import pandas as pd
+import openpyxl
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
