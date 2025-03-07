@@ -10,7 +10,7 @@ from classes.CalculoPrecoShopee import CalculoPrecoShopee
 # Função principal para execução
 def main():
     st.set_page_config(page_title="Calculadora de Preço", layout="centered")
-    tab1 = st.tabs(["Shopee"])
+    tab1, tab2 = st.tabs(["Shopee", "Mercado Livre"])
 
     utils.load_css("assets/styles.css")
 
@@ -70,6 +70,10 @@ def main():
 
         if sugestao_aumento:
             st.warning(sugestao_aumento)
+
+    with tab2:
+        st.header("📊 Calculadora de Preço para Mercado Livre")
+        st.write("Preencha os campos abaixo para calcular o preço ideal do seu produto.")
 
 # Executando o app
 if __name__ == "__main__":
