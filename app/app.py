@@ -9,10 +9,17 @@ from classes.CalculoPrecoShopee import CalculoPrecoShopee
 
 # Função principal para execução
 def main():
-    st.set_page_config(page_title="Calculadora de Preço", layout="centered")
+    st.set_page_config(page_title="Calculadora de Preços E-Commerce", layout="centered")
     tab1, tab2 = st.tabs(["Shopee", "Mercado Livre"])
 
     utils.load_css("assets/styles.css")
+
+    st.markdown(
+                f'<div class="footer"> \
+                Desenvolvido por <a href="https://www.linkedin.com/in/caiquegodoy" target="_blank">Caique Godoy</a> \
+                </div>', 
+                unsafe_allow_html=True
+            )
 
     with tab1:
         st.header("📊 Calculadora de Preços - Shopee")
@@ -104,13 +111,6 @@ def main():
                 <b>% Comissão Shopee:</b> {perc_comissao_shopee_min * 100:.2f}%<br> \
                 <b>% Imposto:</b> R${taxa_imposto:.2f}%<br> \
                 <b>% Custo Operacional:</b> {calculadora.percentual_despesas * 100:.2f}%</div>', 
-                unsafe_allow_html=True
-            )
-        
-        st.markdown(
-                f'<div class="footer"> \
-                Desenvolvido por <a href="https://www.linkedin.com/in/caiquegodoy" target="_blank">Caique Godoy</a> \
-                </div>', 
                 unsafe_allow_html=True
             )
 
