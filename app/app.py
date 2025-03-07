@@ -10,7 +10,7 @@ from classes.CalculoPrecoShopee import CalculoPrecoShopee
 # Função principal para execução
 def main():
     st.set_page_config(page_title="Calculadora de Preço", layout="centered")
-    tab1, tab2 = st.tabs(["Shopee"])
+    tab1 = st.tabs(["Shopee"])
 
     utils.load_css("assets/styles.css")
 
