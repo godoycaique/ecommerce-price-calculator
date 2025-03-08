@@ -1,4 +1,6 @@
 .venv/*
 src/__pycache__/*
 classes/__pycache__/*
+app/__pycache__/*
 .devcontainer/*
+site/*

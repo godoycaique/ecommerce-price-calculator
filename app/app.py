@@ -17,7 +17,8 @@ def main():
 
     st.markdown(
         f'<div class="footer"> \
-        Desenvolvido por <a href="https://www.linkedin.com/in/caiquegodoy" target="_blank">Caique Godoy</a> \
+        Desenvolvido por <a href="https://www.linkedin.com/in/caiquegodoy" target="_blank">Caique Godoy</a> | \
+        <a href="https://godoycaique.github.io/ecommerce-price-calculator//" target="_blank">Documentação do Aplicativo</a> \
         </div>', 
         unsafe_allow_html=True
     )
