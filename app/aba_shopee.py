@@ -4,18 +4,24 @@ import os
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from src import utils
+from src.utils import define_campos_inputs_principal, load_css
 from classes.CalculoPrecoShopee import CalculoPrecoShopee
 
-utils.load_css("assets/styles.css")
+load_css("assets/styles.css")
 
 def mostrar_aba_shopee():
+    """
+    Cria a página de cálculo de preço de venda unitário para produtos da shopee
+
+    Exemplo de uso:
+    Realizar a chamada da função no arquivo app.py
+    """
 
     st.header("📊 Calculadora de Preços - Shopee")
     st.write("Preencha os campos abaixo para calcular o preço ideal do seu produto.")
 
     # Pegando os parâmetros do Streamlit
-    custo_produto, custo_embalagem, taxa_imposto, taxa_shopee, valor_fixo_shopee, outros_custos, considera_operacional, faturamento_mensal, custos_fixos, lucro_esperado, lucro_minimo = utils.define_campos_inputs_principal()
+    custo_produto, custo_embalagem, taxa_imposto, taxa_shopee, valor_fixo_shopee, outros_custos, considera_operacional, faturamento_mensal, custos_fixos, lucro_esperado, lucro_minimo = define_campos_inputs_principal()
 
     # Calculando o preço de venda, despesas, lucro e comissões
     # Criando a instância da classe

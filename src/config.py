@@ -1,3 +1,4 @@
+#Define textos de ajuda dos campos
 custo_produto_help = "Digite o preço de custo do produto, sem o custo da embalagem"
 custo_embalagem_help = "Digite o preço de custo da embalagem (caixas, plásticos, fita e etc.)"
 taxa_imposto_help = "Digita o percentual da sua taxa de imposto (ex: 5,45)"
