@@ -4,15 +4,14 @@ st.set_page_config(page_title="Calculadora de Preços E-Commerce", layout="cente
 
 import sys
 import os
-
-
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import aba_shopee, aba_mercadolivre, aba_shopee_massa
 from src.utils import load_css
 
 # Função principal para execução
 def main():
-    tab1, tab2, tab3 = st.tabs(["Shopee", "Mercado Livre", "Calculo em Massa"])
+    tab1, tab2 = st.tabs(["Shopee", "Mercado Livre"])
 
     load_css("assets/styles.css")
 
@@ -24,13 +23,15 @@ def main():
     )
 
     with tab1:
-        aba_shopee.mostrar_aba_shopee()
+        tab_unit, tab_massa = st.tabs(['Calculo unitário', 'Calculo em massa'])
+        
+        with tab_unit:
+            aba_shopee.mostrar_aba_shopee()
+        with tab_massa:
+            aba_shopee_massa.mostrar_aba_shopee_massa()
 
     with tab2:
         aba_mercadolivre.mostrar_aba_mercadolivre()
-
-    with tab3:
-        aba_shopee_massa.mostrar_aba_shopee_massa()
 
 # Executando o app
 if __name__ == "__main__":

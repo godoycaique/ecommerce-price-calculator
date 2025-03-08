@@ -1,0 +1,17 @@
+site_name: Documentação da Calculadora de Preços E-Commerce
+theme:
+  name: readthedocs
+nav:
+  - Home: index.md
+  - Guia de Uso: guia/guia.md
+  - Campos Utilizados: guia/campos_utilizados.md
+extra:  
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/caiquegodoy
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences

@@ -23,7 +23,7 @@ class CalculoPrecoShopee:
         self.max_desconto = None
 
     def calcula_preco_venda(self):
-        """Calcula o preço de venda ideal e o mínimo."""
+        """Calcula o preço de venda ideal e o valor mínimo."""
 
         if self.considera_operacional:
             if self.percentual_despesas is None or self.taxa_shopee is None or self.taxa_imposto is None:
@@ -52,6 +52,7 @@ class CalculoPrecoShopee:
                 self.max_desconto = None
 
     def calcula_percentual_despesa(self):
+        """Calcula percentual de despesa com base no faturamento mensal bruto e nos custos fixos menal da empresa"""
         if self.faturamento_mensal == 0:
             return 0
         else:
